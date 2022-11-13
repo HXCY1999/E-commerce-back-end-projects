@@ -1,0 +1,29 @@
+# Configure port number
+server:
+  port: 8091
+
+#ManageDataSource
+spring:
+  datasource:
+    #Higher version driver use
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jt?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    # Set username and password
+    username: root
+    password: root
+
+#SpringBoot integrate Mybatis-plus
+mybatis-plus:
+  #Specify alias package
+  type-aliases-package: com.jt.pojo
+  # Scan for mapping files under the specified path
+  mapper-locations: classpath:/mappers/*.xml
+  # Turn on hump mapping
+  configuration:
+    map-underscore-to-camel-case: true
+  # One or two caches start by default so it can be simplified
+
+#print mysql logs
+logging:
+  level:
+    com.jt.mapper: debug
