@@ -1,4 +1,4 @@
-#E-commerce management back-end project"# E-commerce-back-end-projects" 
+#E-commerce management back-end project
 
 Designed and implemented an E-commerce backend management system using SpringBoot, SpringMVC, and Mybatis to support User Management, Item Management, Order Management, and other functions
 
